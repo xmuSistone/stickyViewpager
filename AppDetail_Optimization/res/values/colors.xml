@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <color name="blue">#ff0000ff</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="line_gray">#cccccc</color>
+    <color name="main_ndicator_default">#939393</color>
+    <color name="main_ndicator_selected">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="halftransparent">#77000000</color>
+    <color name="transparent_manage">#66000000</color>
+    <color name="item_main">#ffffffff</color>
+    <color name="myfollow_text_gray">#ff797979</color>
+    <color name="myfollow_entry_middleline">#ffd4d4d4</color>
+    <color name="item_selected">#ffe6e6e6</color>
+    <color name="item_title">#ff414141</color>
+    <color name="listview_common_text_blue">#ff269bfe</color>
+    <color name="edit_text_color">#1c1c1c</color>
+    <color name="listview_common_button_normal">#ff2da4f0</color>
+    <color name="listview_common_button_normal2">#ffe6e6e6</color>
+    <color name="listview_common_button_pressed">#ff128cda</color>
+    <color name="list_item_soft_name">#ff666666</color>
+    <color name="holo_blue">#FF33E5B5</color>
+    <color name="text_gray">#ff989898</color>
+    <color name="common_background">#fff6f6f6</color>
+    <color name ="nav_title_background">#2da4f0</color>
+    <color name="detail_tag_bg">#ECEAEA</color>
+    <color name="detail_tag_txt">#CAC9C9</color>
+    <color name="btn_gary">#E4E4E4</color>
+    <color name="sky_blue">#269BFE</color>
+    <color name="search_nodata">#FF8F8D8F</color>
+    <color name="appdesc">#777777</color>
+    <color name="detail_dead">#f0f0f0</color>
+    <color name="wd_app">#5FB9FD</color>
+    <color name="wd_app_pressed">#2BA3FF</color>
+    <color name="wd_common">#ECEAEA</color>
+    
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="background_downloading">#67bd2d</color>
+    
+    <color name="viewfinder_frame">#ffffff</color>
+    <color name="result_view">#ffffff</color>
+  	<color name="viewfinder_mask">#8f000000</color>
+  	<color name="manager_title">#797979</color>
+    <color name="manager_line">#e4e4e4</color>
+    <color name="manager_num">#ff4f19</color>
+    <color name="about_lincence">#008aff</color>
+    <color name="report_normal">#e7e7e7</color>
+    <color name="report_press">#e6e6e6</color>
+    <color name="my_comment_username">#4ebd5c</color>
+    <color name="comment_username">#494949</color>
+    <color name="detail_check_safe">#4ebd5c</color>
+    <color name="detail_check_warn">#ff9000</color>
+    <color name="clear_apk_start">#2da5ef</color>
+    <color name="clear_apk_warn">#f76b69</color>
+    <color name="apk_check_more">#989898</color>
+    
+</resources>
