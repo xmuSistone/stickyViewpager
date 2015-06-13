@@ -4,8 +4,8 @@ viewpager左右滑动的时候，始终有一个view“粘”在顶部。Viewpag
 
 
 <td>
-  <img src="screen2.jpg" width="300" height="500" />
-  <img src="screen1.jpg" width="300" height="500" style="margin-left:16px" />
+  <img src="screen1.jpg" width="300" height="500" />
+  <img src="screen2.jpg" width="300" height="500" style="margin-left:16px" />
 </td>
 
 viewpager在上下滑动的时候，对stickyview位置的改变，会存在惯性。大多bug已经修复完成，滑动比较流畅。欢迎拍砖~
