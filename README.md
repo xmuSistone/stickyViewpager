@@ -10,6 +10,6 @@ viewpager左右滑动的时候，始终有一个view“粘”在顶部。Viewpag
 
 viewpager在上下滑动的时候，对stickyview位置的改变，会存在惯性。大多bug已经修复完成，滑动比较流畅。欢迎拍砖~
 
-备注：
+备注：<br/>
 该project使用的水平listview是：https://github.com/MeetMe/Android-HorizontalListView --(只修改了dispatchTouchEvent方法)<br/>
 viewpager指示器是：https://github.com/astuetz/PagerSlidingTabStrip
