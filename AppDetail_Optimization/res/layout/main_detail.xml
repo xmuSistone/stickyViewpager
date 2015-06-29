@@ -106,6 +106,8 @@
 
                     <TextView
                         android:id="@+id/place_tv"
+                        android:singleLine="true"
+                        android:ellipsize="end"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="3D终极狂飙3【热血版】"

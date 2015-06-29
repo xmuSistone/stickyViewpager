@@ -39,6 +39,10 @@ public class StickyListView extends ListView {
 		@Override
 		public void onScroll(AbsListView view, int firstVisibleItem,
 				int visibleItemCount, int totalItemCount) {
+			if (null != scrollCallBack && scrollCallBack.getCurrentViewpagerItem() == 0) {
+				return;
+			}
+			
 			if (firstVisibleItem == 0) {
 				View firstView = getChildAt(0);
 				if (null != firstView) {
@@ -58,7 +62,7 @@ public class StickyListView extends ListView {
 		public void onScrollStateChanged(AbsListView view, int scrollState) {
 			Log.i("LeiTest", "onScrollStateChanged=" + scrollState);
 
-			// scrollState=0 ´ú±í»¬¶¯½áÊø
+			// scrollState=0 ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			if (scrollState == OnScrollListener.SCROLL_STATE_IDLE) {
 				animScrollY();
 			}
@@ -106,7 +110,7 @@ public class StickyListView extends ListView {
 
 		@Override
 		public void run() {
-			int num = 10; // Ê®´ÎÑ­»·µ½Î»
+			int num = 10; // Ê®ï¿½ï¿½Ñ­ï¿½ï¿½ï¿½ï¿½Î»
 			for (int i = 0; i < num; i++) {
 				try {
 					sleep(20);

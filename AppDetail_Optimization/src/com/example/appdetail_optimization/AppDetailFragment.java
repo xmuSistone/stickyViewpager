@@ -82,6 +82,11 @@ public class AppDetailFragment extends Fragment {
 			public void onScrollChanged(int scrollY) {
 				processStickyTranslateY(scrollY);
 			}
+
+			@Override
+			public int getCurrentViewpagerItem() {
+				return viewpager.getCurrentItem();
+			}
 		};
 
 		detailFragment1 = new DetailFragment1();
@@ -204,6 +209,7 @@ public class AppDetailFragment extends Fragment {
 
 	public interface StickyScrollCallBack {
 		public void onScrollChanged(int scrollY);
+		public int getCurrentViewpagerItem();
 	}
 	
 	public interface ViewPagerStateListener {
