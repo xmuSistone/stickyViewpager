@@ -45,6 +45,10 @@ public class StickyScrollView extends ScrollView {
 	protected void onScrollChanged(int l, int t, int oldl, int oldt) {
 		super.onScrollChanged(l, t, oldl, oldt);
 
+		if (scrollCallBack.getCurrentViewpagerItem() != 0) {
+			return;
+		}
+		
 		if (null != scrollCallBack) {
 			int stickyTranslate = t;
 			if (t > AppDetailFragment.STICKY_HEIGHT1) {
