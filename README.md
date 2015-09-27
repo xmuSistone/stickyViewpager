@@ -12,4 +12,13 @@ viewpager在上下滑动的时候，对stickyview位置的改变，会存在惯�
 
 备注：<br>
 该project使用的水平listview是：https://github.com/MeetMe/Android-HorizontalListView --(只修改了dispatchTouchEvent方法)<br>
-viewpager指示器是：https://github.com/astuetz/PagerSlidingTabStrip
+viewpager指示器是：https://github.com/astuetz/PagerSlidingTabStrip<br><br>
+
+后记：该project提供的思路，最近被作为公司App某个页面的主框架。那个页面，会从网络拉取数据，业务稍显复杂，而且listView还添加了Footer。修改的过程比较曲折，有2个一定要思考的细节点如下：<br>
+(1) 网络数据获取失败时，viewPager的header如何实现黏性滑动?<br>
+(2) 网络数据获取成功，但是listView.getCount()较小，使得所有getView的高度之和，依然无法将stickyView撑到最顶部，则黏性滑动无法完整，这该怎么做?<br><br>
+这是2个比较严肃的问题，如果解决不好，则给用户的一种感觉就是：“半成品”，恐怕boss们也不会允许产品上线和发布。<br>
+但是解决这2个问题，是很有挑战性的，不是么？<br>
+友情提示：黏性View的位移处理可以非常精确，这取决于占位View的高度计算是否精准。事实上，ListView的scroll区间、黏性View的高度和footerView的高度都能被计算的很精确，占位View的高度计算，又能有多麻烦呢？
+
+
